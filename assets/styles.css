@@ -1,0 +1,61 @@
+.main {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.stTitle {
+    text-align: center;
+    color: #495057;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.stMarkdown {
+    font-size: 18px;
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+.stChatMessage {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+.stChatMessage[data-testid="stChatMessage-user"] {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stChatMessage[data-testid="stChatMessage-assistant"] {
+    background-color: #ffffff;
+    color: #333;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stChatInputContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    z-index: 1000;
+}
+.stChatInput {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+/* Hide Streamlit's default elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
